@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exquisite Skills Training Academy | Integrity and Excellence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <img src="exquisite skills logo.jpeg" alt="Exquisite Skills Training Academy Logo" class="site-logo">
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="navbar" id="mainNavbar">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#gallery" class="nav-link">Our Academy</a></li>
+                    <li><a href="#accreditations" class="nav-link">Accreditations</a></li>
+                    <li><a href="#services" class="nav-link">Our Services</a></li>
+                    <li><a href="#programmes" class="nav-link">Programmes</a></li>
+                    <li><a href="#upcoming-event" class="nav-link" style="color: #f45b8a; font-weight: 600;">Special Event</a></li>
+                    <li><a href="#footprint" class="nav-link">Footprint</a></li>
+                    <li><a href="#offices" class="nav-link">Our Offices</a></li>
+                    <li><a href="#contact" class="btn-primary">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge">Level 1 B-BBEE Contributor</span>
+                <h1>Empowering Minds With <span>Integrity & Excellence</span></h1>
+                <p>Exquisite Skills Training Academy is a dynamic corporate training and consulting company specializing in Human Capital Development (Administration & Management). We assist businesses with compliance and help implement National Skills Development Strategies.</p>
+                
+                <div class="hero-actions">
+                    <a href="#programmes" class="btn-primary">Explore Programmes</a>
+                    <a href="#about" class="btn-secondary">Learn More</a>
+                </div>
+
+                <div class="hero-stats-row">
+                    <div class="abstract-card">
+                        <h3 class="counter-val" data-target="100">0</h3>
+                        <p>% Black-Owned Consultancy</p>
+                    </div>
+                    <div class="abstract-card">
+                        <h3 class="counter-val" data-target="2009">0</h3>
+                        <p>Established Year</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual-container">
+                <img src="class3.jpeg" alt="Exquisite Skills Academy Team and Inclusivity Overview" class="responsive-hero-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Who We Are</h2>
+                <p>Bridging vital skills gaps across the South African Labour Market through professional, outcome-based training solutions.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Our Vision</h3>
+                    <p>To create a brand which will attract and retain a competent, vibrant, and high-quality workforce across South Africa and beyond its borders.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Our Mission</h3>
+                    <p>Ensure methodology efficiency, source dynamic talent, and optimize training and development resources for distinct organizational growth.</p>
+                </div>
+            </div>
+
+            <div class="leadership-box">
+                <div class="leader-details">
+                    <div class="avatar-box">👤</div>
+                    <div>
+                        <h4>Mohau Ivan Swaratlhe</h4>
+                        <p class="role-title">Managing Director</p>
+                        <p>Brings a wealth of academic experience in Education, Training, and Development alongside vast industry specialization to guide strategic human resources performance.</p>
+                    </div>
+                </div>
+                <div class="values-sidebar">
+                    <h4>Culture & Values</h4>
+                    <ul>
+                        <li><strong>Integrity:</strong> Honest, client-centered transparency.</li>
+                        <li><strong>Efficiency:</strong> Highly optimized organizational methodology.</li>
+                        <li><strong>Excellence:</strong> exceptionally high standards of training practice.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Academy Highlights & Environments</h2>
+                <p>A look inside our training sessions, interactive workshops, and state-of-the-art corporate development setups.</p>
+            </div>
+            <div class="academy-photo-grid">
+                <div class="photo-card">
+                    <img src="class 1.jpeg" alt="Interactive Leadership Presentation Session">
+                    <div class="photo-caption">Strategic Facilitation</div>
+                </div>
+                <div class="photo-card">
+                    <img src="class2.jpeg" alt="Engaged Learners and Academy Collaborators">
+                    <div class="photo-caption">Dynamic Collaboration</div>
+                </div>
+                <div class="photo-card">
+                    <img src="class4.jpeg" alt="Active Workshop Assessments and Executive Learning">
+                    <div class="photo-caption">Outcome-Based Assessments</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="accreditations" class="accreditations-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Accredited Primary SETAs</h2>
+                <p>Fully compliant learning structures registered and approved across prominent Sector Education Training Authorities.</p>
+            </div>
+            <div class="seta-grid">
+                <div class="seta-badge"><span>QCTO</span></div>
+                <div class="seta-badge"><span>PSETA</span></div>
+                <div class="seta-badge"><span>MICSETA</span></div>
+                <div class="seta-badge"><span>HWSETA</span></div>
+                <div class="seta-badge"><span>ETDP SETA</span></div>
+                <div class="seta-badge"><span>SERVICES SETA</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Core Specializations</h2>
+                <p>Outcome-based, NQF-aligned learning frameworks configured for unique corporate growth strategies.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="icon-box">📊</div>
+                    <h3>Skills Development Facilitation</h3>
+                    <ul>
+                        <li>Conducting Comprehensive Skills Audits</li>
+                        <li>Developing Workplace Skills Plans (WSP)</li>
+                        <li>Compiling Annual Training Reports (ATR)</li>
+                        <li>Establishing Training Committees</li>
+                        <li>Monitoring WSP Implementation</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="icon-box">📜</div>
+                    <h3>Accreditation Consultancy</h3>
+                    <ul>
+                        <li>Advice on Provider Accreditation Process</li>
+                        <li>Developing ETD Quality Management Systems</li>
+                        <li>Development and Alignment of Learning Material</li>
+                        <li>Facilitators, Assessors, & Moderators Registration</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="icon-box">💼</div>
+                    <h3>Experiential Programmes</h3>
+                    <ul>
+                        <li>Youth Development Programmes</li>
+                        <li>Internship & Learnership Management</li>
+                        <li>Job Shadowing Programs</li>
+                        <li>Coaching & Mentoring Frameworks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="toolkit-container">
+                <h3>Education & Training Practitioner Toolkits</h3>
+                <div class="toolkit-flex">
+                    <span class="tk-tag">Skills Development Facilitator Toolkit</span>
+                    <span class="tk-tag">Facilitator Toolkit</span>
+                    <span class="tk-tag">Assessor Toolkit</span>
+                    <span class="tk-tag">Moderator Toolkit</span>
+                    <span class="tk-tag">Coaching & Mentoring Toolkit</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programmes" class="programmes-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Occupationally Directed Learning Programmes</h2>
+                <p>Type keywords below to filter through all of our available qualifications, short courses, and skills programmes instantly.</p>
+                <input type="text" id="courseSearch" placeholder="🔍 Search courses (e.g. Project Management, Assessor, Finance, Office)..." onkeyup="filterCourses()">
+            </div>
+            
+            <div class="courses-display-grid" id="coursesGrid">
+                <div class="course-card-element" data-name="induction programme executive development">
+                    <h4>Induction & Executive Development</h4>
+                    <span>Leadership Development</span>
+                </div>
+                <div class="course-card-element" data-name="data mining analysis systems">
+                    <h4>Data Mining</h4>
+                    <span>Information Systems</span>
+                </div>
+                <div class="course-card-element" data-name="public financial management accounts">
+                    <h4>Public Financial Management</h4>
+                    <span>Finance & Government</span>
+                </div>
+                <div class="course-card-element" data-name="information management systems technology">
+                    <h4>Information Management</h4>
+                    <span>Information Systems</span>
+                </div>
+                <div class="course-card-element" data-name="human resource management hrm consulting">
+                    <h4>Human Resource Management</h4>
+                    <span>HRM Consulting</span>
+                </div>
+                <div class="course-card-element" data-name="government budgeting course public finance">
+                    <h4>Government Budgeting Course</h4>
+                    <span>Finance & Government</span>
+                </div>
+                <div class="course-card-element" data-name="skills development facilitator course sdf practitioner">
+                    <h4>Skills Development Facilitator</h4>
+                    <span>ETD Practice</span>
+                </div>
+                <div class="course-card-element" data-name="training material development course learning design">
+                    <h4>Training Material Development</h4>
+                    <span>ETD Practice</span>
+                </div>
+                <div class="course-card-element" data-name="facilitating using variety of methodologies">
+                    <h4>Facilitating with Varied Methodologies</h4>
+                    <span>ETD Practice</span>
+                </div>
+                <div class="course-card-element" data-name="early childhood development ecd full qualification">
+                    <h4>Early Childhood Development (Full Qualification)</h4>
+                    <span>Specialized Learning</span>
+                </div>
+                <div class="course-card-element" data-name="assessor course registration training">
+                    <h4>Assessor Course</h4>
+                    <span>ETD Practice</span>
+                </div>
+                <div class="course-card-element" data-name="moderator course registration training">
+                    <h4>Moderator Course</h4>
+                    <span>ETD Practice</span>
+                </div>
+                <div class="course-card-element" data-name="conflict management resolution workplace">
+                    <h4>Conflict Management</h4>
+                    <span>Corporate Skills</span>
+                </div>
+                <div class="course-card-element" data-name="communication skills oral written">
+                    <h4>Communication Skills</h4>
+                    <span>Corporate Skills</span>
+                </div>
+                <div class="course-card-element" data-name="full qualification in odetdp occupationally directed practice">
+                    <h4>Full Qualification in ODETDP</h4>
+                    <span>ETD Practice</span>
+                </div>
+                <div class="course-card-element" data-name="effective report writing communications">
+                    <h4>Effective Report Writing</h4>
+                    <span>Corporate Skills</span>
+                </div>
+                <div class="course-card-element" data-name="project management course execution planning">
+                    <h4>Project Management Course</h4>
+                    <span>Business Enterprise</span>
+                </div>
+                <div class="course-card-element" data-name="knowledge management strategic retention">
+                    <h4>Knowledge Management</h4>
+                    <span>Information Systems</span>
+                </div>
+                <div class="course-card-element" data-name="customer service excellence course telephone etiquette">
+                    <h4>Customer Service Excellence</h4>
+                    <span>Corporate Skills</span>
+                </div>
+                <div class="course-card-element" data-name="business enterprise strategy development">
+                    <h4>Business Enterprise</h4>
+                    <span>Business Enterprise</span>
+                </div>
+                <div class="course-card-element" data-name="secretaries course administrative executive">
+                    <h4>Secretaries Course</h4>
+                    <span>Administration</span>
+                </div>
+                <div class="course-card-element" data-name="stress management wellness mental focus">
+                    <h4>Stress Management</h4>
+                    <span>Productivity</span>
+                </div>
+                <div class="course-card-element" data-name="time management productivity prioritization">
+                    <h4>Time Management</h4>
+                    <span>Productivity</span>
+                </div>
+                <div class="course-card-element" data-name="safety health environment quality management sheq">
+                    <h4>SHEQ Management</h4>
+                    <span>Occupational Health</span>
+                </div>
+                <div class="course-card-element" data-name="occupational health safety ohs compliance">
+                    <h4>Occupational Health & Safety</h4>
+                    <span>Occupational Health</span>
+                </div>
+                <div class="course-card-element" data-name="research methodology analytical reports">
+                    <h4>Research Methodology</h4>
+                    <span>Business Enterprise</span>
+                </div>
+                <div class="course-card-element" data-name="minute taking meetings records">
+                    <h4>Minute Taking</h4>
+                    <span>Administration</span>
+                </div>
+                <div class="course-card-element" data-name="office administration professional office management">
+                    <h4>Office Administration & Management</h4>
+                    <span>Administration</span>
+                </div>
+                <div class="course-card-element" data-name="full qualification on project management strategy">
+                    <h4>Project Management (Full Qualification)</h4>
+                    <span>Business Enterprise</span>
+                </div>
+                <div class="course-card-element" data-name="coaching mentoring talent workplace">
+                    <h4>Coaching & Mentoring</h4>
+                    <span>ETD Practice</span>
+                </div>
+                <div class="course-card-element" data-name="microsoft ms office package beginner intermediate advance 2010">
+                    <h4>MS Office Package (Beginner to Advance)</h4>
+                    <span>Information Systems</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="upcoming-event" class="event-feature-section" style="padding: 5rem 0; background: linear-gradient(135deg, #fff5f7 0%, #fff0f3 100%); border-top: 3px solid #f45b8a;">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 3.5rem;">
+                <span class="badge" style="background-color: #f45b8a; color: white; padding: 0.5rem 1.25rem; font-weight: 600; border-radius: 50px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;">Exclusive Feature Function</span>
+                <h2 style="font-size: 2.5rem; color: #1e293b; margin-top: 1rem;">Women's Empowerment Function 2026</h2>
+                <p style="font-style: italic; color: #f45b8a; font-size: 1.25rem; margin-top: 0.5rem; font-weight: 500;">"You Are Seen. You Are Heard. You Are Loved."</p>
+            </div>
+
+            <div id="eventCountdown" style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 3.5rem; font-family: 'Plus Jakarta Sans', sans-serif;">
+                <div style="background: white; min-width: 90px; padding: 1rem; border-radius: 12px; box-shadow: 0 10px 20px rgba(244,91,138,0.08); text-align: center; border-bottom: 4px solid #f45b8a;">
+                    <span id="cd-days" style="display: block; font-size: 2.2rem; font-weight: 700; color: #1e293b; line-height: 1;">00</span>
+                    <span style="font-size: 0.75rem; text-transform: uppercase; color: #64748b; font-weight: 600; letter-spacing: 0.05em; margin-top: 0.25rem; display: block;">Days</span>
+                </div>
+                <div style="background: white; min-width: 90px; padding: 1rem; border-radius: 12px; box-shadow: 0 10px 20px rgba(244,91,138,0.08); text-align: center; border-bottom: 4px solid #f45b8a;">
+                    <span id="cd-hours" style="display: block; font-size: 2.2rem; font-weight: 700; color: #1e293b; line-height: 1;">00</span>
+                    <span style="font-size: 0.75rem; text-transform: uppercase; color: #64748b; font-weight: 600; letter-spacing: 0.05em; margin-top: 0.25rem; display: block;">Hours</span>
+                </div>
+                <div style="background: white; min-width: 90px; padding: 1rem; border-radius: 12px; box-shadow: 0 10px 20px rgba(244,91,138,0.08); text-align: center; border-bottom: 4px solid #f45b8a;">
+                    <span id="cd-minutes" style="display: block; font-size: 2.2rem; font-weight: 700; color: #1e293b; line-height: 1;">00</span>
+                    <span style="font-size: 0.75rem; text-transform: uppercase; color: #64748b; font-weight: 600; letter-spacing: 0.05em; margin-top: 0.25rem; display: block;">Minutes</span>
+                </div>
+                <div style="background: white; min-width: 90px; padding: 1rem; border-radius: 12px; box-shadow: 0 10px 20px rgba(244,91,138,0.08); text-align: center; border-bottom: 4px solid #f45b8a;">
+                    <span id="cd-seconds" style="display: block; font-size: 2.2rem; font-weight: 700; color: #e11d48; line-height: 1;">00</span>
+                    <span style="font-size: 0.75rem; text-transform: uppercase; color: #64748b; font-weight: 600; letter-spacing: 0.05em; margin-top: 0.25rem; display: block;">Seconds</span>
+                </div>
+            </div>
+
+            <div class="event-grid-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div class="event-image-showcase" style="position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px rgba(244,91,138,0.15);">
+                    <img src="class101.jpeg" alt="Women's Empowerment Function 2026 Flyer" style="width: 100%; height: auto; display: block;">
+                    <div style="position: absolute; top: 1.5rem; right: 1.5rem; background: #e11d48; color: white; padding: 0.75rem 1.5rem; font-weight: 700; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        Limited to 50 Ladies Only!
+                    </div>
+                </div>
+
+                <div class="event-details-content">
+                    <h3 style="font-size: 1.75rem; color: #0f172a; margin-bottom: 1rem; font-weight: 700;">Intimate & Exclusive Experience</h3>
+                    <p style="color: #475569; font-size: 1.05rem; line-height: 1.6; margin-bottom: 2rem;">
+                        Join us for an exclusive and intimate women's gathering thoughtfully curated for just 50 ladies. This event offers a safe and empowering space where every woman is truly seen, heard, and deeply valued.
+                    </p>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2.5rem;">
+                        <div style="background: white; padding: 1.25rem; border-radius: 12px; border-left: 4px solid #f45b8a; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+                            <span style="font-size: 0.85rem; color: #64748b; text-transform: uppercase; font-weight: 600; display: block; margin-bottom: 0.25rem;">📍 Venue</span>
+                            <strong style="color: #1e293b; font-size: 1.1rem;">Hartebees</strong>
+                        </div>
+                        <div style="background: white; padding: 1.25rem; border-radius: 12px; border-left: 4px solid #f45b8a; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+                            <span style="font-size: 0.85rem; color: #64748b; text-transform: uppercase; font-weight: 600; display: block; margin-bottom: 0.25rem;">📅 Date</span>
+                            <strong style="color: #1e293b; font-size: 1.1rem;">Saturday, 29 August 2026</strong>
+                        </div>
+                        <div style="background: white; padding: 1.25rem; border-radius: 12px; border-left: 4px solid #f45b8a; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+                            <span style="font-size: 0.85rem; color: #64748b; text-transform: uppercase; font-weight: 600; display: block; margin-bottom: 0.25rem;">🕒 Time</span>
+                            <strong style="color: #1e293b; font-size: 1.1rem;">10h00 – 17h00</strong>
+                        </div>
+                        <div style="background: white; padding: 1.25rem; border-radius: 12px; border-left: 4px solid #f45b8a; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+                            <span style="font-size: 0.85rem; color: #64748b; text-transform: uppercase; font-weight: 600; display: block; margin-bottom: 0.25rem;">👗 Dress Code</span>
+                            <strong style="color: #1e293b; font-size: 1.1rem;">Elegant | Touch of Pink or Purple</strong>
+                        </div>
+                    </div>
+
+                    <h4 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em;">What To Expect:</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 2.5rem 0; display: grid; grid-template-columns: 1fr; gap: 0.75rem;">
+                        <li style="display: flex; align-items: center; gap: 0.75rem; color: #334155; font-weight: 500;"><span style="color: #f45b8a; font-size: 1.2rem;">🎤</span> Inspirational Guest Speakers</li>
+                        <li style="display: flex; align-items: center; gap: 0.75rem; color: #334155; font-weight: 500;"><span style="color: #f45b8a; font-size: 1.2rem;">👥</span> Empowerment Conversations</li>
+                        <li style="display: flex; align-items: center; gap: 0.75rem; color: #334155; font-weight: 500;"><span style="color: #f45b8a; font-size: 1.2rem;">❤️</span> Sisterhood & Networking</li>
+                        <li style="display: flex; align-items: center; gap: 0.75rem; color: #334155; font-weight: 500;"><span style="color: #f45b8a; font-size: 1.2rem;">☕</span> Refreshments & Entertainment</li>
+                        <li style="display: flex; align-items: center; gap: 0.75rem; color: #334155; font-weight: 500;"><span style="color: #f45b8a; font-size: 1.2rem;">🍷</span> Wine Tasting Experience</li>
+                    </ul>
+
+                    <div style="background: #fff1f2; border: 1px dashed #fda4af; padding: 1rem 1.5rem; border-radius: 8px; margin-bottom: 2rem; color: #9f1239; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+                        ⚠️ ONLY 50 SEATS AVAILABLE – EARLY BOOKING IS ESSENTIAL!
+                    </div>
+
+                    <a href="#contact" class="btn-primary" style="background-color: #f45b8a; border-color: #f45b8a; display: inline-block; padding: 1rem 2rem; border-radius: 8px; color: white; text-decoration: none; font-weight: 600; text-align: center; box-shadow: 0 10px 20px rgba(244,91,138,0.2);">Secure Your Booking Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footprint" class="footprint-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our National Footprint</h2>
+                <p>Catering professionally to regional operations across all nine provinces from our main hub in Pretoria.</p>
+            </div>
+            
+            <div class="footprint-layout">
+                <div class="provinces-list-box">
+                    <h4>Catering for Courses Countrywide:</h4>
+                    <div class="prov-tags-grid">
+                        <span class="p-tag active-p">Gauteng</span>
+                        <span class="p-tag">Limpopo</span>
+                        <span class="p-tag">Mpumalanga</span>
+                        <span class="p-tag">North West</span>
+                        <span class="p-tag">Free State</span>
+                        <span class="p-tag">Kwa-Zulu Natal</span>
+                        <span class="p-tag">Eastern Cape</span>
+                        <span class="p-tag">Western Cape</span>
+                        <span class="p-tag">Northern Cape</span>
+                    </div>
+                </div>
+                
+                <div class="map-view-wrapper">
+                    <div id="liveMap"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="offices" class="office-showcase-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Premises & Campus</h2>
+                <p>Explore our premium head office environment designed to accommodate modern learning frameworks and collaborative workspaces.</p>
+            </div>
+            
+            <div class="office-grid">
+                <div class="campus-gallery">
+                    <div class="campus-photo-wrapper main-campus">
+                        <img src="building.jpeg" alt="Exquisite Skills Training Academy Office Premises Entrance">
+                        <span class="campus-tag">Main Campus Complex</span>
+                    </div>
+                    <div class="campus-photo-wrapper">
+                        <img src="class5.jpeg" alt="Academy Modern Training Room Infrastructure">
+                        <span class="campus-tag">Our main training campus is located within Brooklyn Bridge Office Park</span>
+                    </div>
+                    <div class="campus-photo-wrapper">
+                        <img src="class3.jpeg" alt="Collaborative Study Area Environment">
+                        <span class="campus-tag">Collaborative Space</span>
+                    </div>
+                </div>
+
+                <div class="office-details-card">
+                    <h3>Brooklyn Bridge Office Park</h3>
+                    <span class="office-location-sub">Primary Hub • Pretoria East</span>
+                    <p>Strategically situated in a high-profile corporate sector, our academy facilities provide candidates, facilitators, and partners with top-tier technical training spaces, high-speed infrastructure, and comfortable learning configurations built to international standards.</p>
+                    
+                    <ul class="amenities-list">
+                        <li>State-of-the-Art Interactive Lecture Rooms</li>
+                        <li>Fully Air-Conditioned Training Environment</li>
+                        <li>Equipped Technology and Systems Lab</li>
+                        <li>Advanced Assessment Facilities</li>
+                        <li>Secure Campus Parking & Dedicated Security</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="main-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Exquisite Skills Training Academy</h3>
+                <p class="motto">"Integrity and Excellence"</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; max-width: 420px; color: #94a3b8;">
+                    A dedicated multi-discipline management consultancy meeting and exceeding our client's training expectations with diligence and professional skill.
+                </p>
+            </div>
+            
+            <div>
+                <h4>Enquiries & Bookings</h4>
+                <p style="margin-bottom: 0.5rem;">📧 Email: <a href="mailto:Info@esta.org.za" style="color: #ffffff; text-decoration: none;">Info@esta.org.za</a></p>
+                <p style="margin-bottom: 0.5rem;">📞 Landline: <a href="tel:0872657759" style="color: #ffffff; text-decoration: none;">087 265 7759</a></p>
+                <p style="margin-bottom: 0.5rem;">💬 WhatsApp: <a href="https://wa.me/27848646186" target="_blank" style="color: #ffffff; text-decoration: none;">084 864 6186</a></p>
+                <p style="margin-bottom: 0.5rem;">🌐 Website: <a href="https://www.esta.org.za" target="_blank" style="color: #ffffff; text-decoration: none;">www.esta.org.za</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 1. MOBILE NAVIGATION TOGGLE
+        function toggleMenu() {
+            const navbar = document.getElementById('mainNavbar');
+            if (navbar) {
+                navbar.classList.toggle('nav-active');
+            }
+        }
+
+        // 2. HERO SECTION COUNTER ANIMATION
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.counter-val');
+            const speed = 200; 
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        });
+
+        // 3. EVENT COUNTDOWN TIMER
+        const countdownDate = new Date("August 29, 2026 10:00:00").getTime();
+
+        const countdownTimer = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            const daysEl = document.getElementById("cd-days");
+            const hoursEl = document.getElementById("cd-hours");
+            const minutesEl = document.getElementById("cd-minutes");
+            const secondsEl = document.getElementById("cd-seconds");
+
+            if (daysEl) daysEl.innerText = days < 10 ? "0" + days : days;
+            if (hoursEl) hoursEl.innerText = hours < 10 ? "0" + hours : hours;
+            if (minutesEl) minutesEl.innerText = minutes < 10 ? "0" + minutes : minutes;
+            if (secondsEl) secondsEl.innerText = seconds < 10 ? "0" + seconds : seconds;
+
+            if (distance < 0) {
+                clearInterval(countdownTimer);
+                const displayArea = document.getElementById("eventCountdown");
+                if (displayArea) {
+                    displayArea.innerHTML = "<h3 style='color:#e11d48; font-size:1.5rem;'>The Gathering Has Begun!</h3>";
+                }
+            }
+        }, 1000);
+
+        // 4. OCCUPATIONAL PROGRAMMES FILTER ENGINE
+        function filterCourses() {
+            const input = document.getElementById('courseSearch');
+            const filter = input.value.toLowerCase();
+            const grid = document.getElementById('coursesGrid');
+            if (!grid) return;
+            
+            const cards = grid.getElementsByClassName('course-card-element');
+
+            for (let i = 0; i < cards.length; i++) {
+                const nameAttr = cards[i].getAttribute('data-name') || '';
+                if (nameAttr.toLowerCase().indexOf(filter) > -1) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+
+        // 5. LIVE MAP RUNTIME RUNNER (Brooklyn Bridge Campus Hub)
+        document.addEventListener("DOMContentLoaded", () => {
+            const mapElement = document.getElementById('liveMap');
+            
+            if (mapElement) {
+                // Coordinates set specifically for Brooklyn Bridge area (-25.7713, 28.2343)
+                const map = L.map('liveMap').setView([-25.7713, 28.2343], 15);
+
+                // Fetching open standard map tiles
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '© OpenStreetMap contributors'
+                }).addTo(map);
+
+                // Adding localized pinning drop point
+                const marker = L.marker([-25.7713, 28.2343]).addTo(map);
+                marker.bindPopup("<b>Exquisite Skills Training Academy</b><br>Brooklyn Bridge Office Park, Pretoria East.").openPopup();
+            }
+        });
+    </script>
+<script>
+    function toggleMenu() {
+        const navbar = document.getElementById("mainNavbar");
+        // Must match the CSS class exactly
+        navbar.classList.toggle("responsive-nav-open");
+    }
+
+    // Automatically close the menu when a mobile user clicks a section link
+    document.querySelectorAll('.nav-link, .btn-primary').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById("mainNavbar").classList.remove("responsive-nav-open");
+        });
+    });
+</script>
+</body>
+</html>
